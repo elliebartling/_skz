@@ -8368,6 +8368,10 @@ body {
   margin-right: 20px;
 }
 
+.admin-bar #header {
+  top: 32px;
+}
+
 .nav-primary {
   left: 0;
   right: 0;
