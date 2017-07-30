@@ -1,7 +1,7 @@
 <header id="header">
   <div class="nav container">
-    <a class="brand" href="<?php home_url('/'); ?>">
-        <img src="<?php asset_path('images/logo.png'); ?>">
+    <a class="brand" href="/">
+        <img src="<?php echo asset_path('images/logo.png'); ?>">
         <span class="title">The Skeptical Libertarian</span>
     </a>
     <nav class="nav-primary">

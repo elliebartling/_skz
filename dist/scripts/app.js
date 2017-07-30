@@ -74,50 +74,49 @@ module.exports = __webpack_require__(1);
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-window.$ = window.jQuery;
+window.$ = window.jQuery = __webpack_require__(3);
 __webpack_require__(2);
 
 (function ($) {
+	$(document).ready(function () {
 
-	console.log('Loaded app.js');
+		console.log('Loaded app.js');
 
-	var show = false;
-	var nav = $('#header');
+		var show = false;
+		var nav = $('#header');
 
-	$(window).scroll(function (event) {
-		if (document.body.scrollTop === 0) {
-			nav.removeClass('active');
-		} else {
-			nav.addClass('active');
-		}
-	});
+		$(window).scroll(function (event) {
+			if (document.body.scrollTop === 0) {
+				nav.removeClass('active');
+			} else {
+				nav.addClass('active');
+			}
+		});
 
-	if ($('.carousel')) {
 		$('.carousel').slick({
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			infinite: true
 		});
-	}
 
-	$('.search-submit').click(function (e) {
-		e.preventDefault();
-		if ($('.nav-secondary').hasClass('open')) {
-			console.log('Trigger submit');
-			$('.search-form').submit();
-		} else {
-			console.log('Trigger open');
-			$('.nav-secondary').addClass('open');
-			$('.search-field').focus();
-		}
+		$('.search-submit').click(function (e) {
+			e.preventDefault();
+			if ($('.nav-secondary').hasClass('open')) {
+				console.log('Trigger submit');
+				$('.search-form').submit();
+			} else {
+				console.log('Trigger open');
+				$('.nav-secondary').addClass('open');
+				$('.search-field').focus();
+			}
+		});
+
+		// $('.search-field').blur((e) => {
+		// 	if ($('.nav-secondary').hasClass('open')) {
+		// 		$('.nav-secondary').removeClass('open')
+		// 	}
+		// })
 	});
-
-	// $('.search-field').blur((e) => {
-	// 	if ($('.nav-secondary').hasClass('open')) {
-	// 		$('.nav-secondary').removeClass('open')
-	// 	}
-	// })
-
 })(jQuery);
 
 /***/ }),

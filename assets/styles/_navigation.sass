@@ -34,6 +34,7 @@ body
   justify-content: flex-start
   color: $brand-primary
 
+
 .nav .title
   display: none
   +breakpoint($lg)
@@ -42,6 +43,7 @@ body
   text-transform: uppercase
   font-size: 1.4rem
   letter-spacing: 1.5px
+  z-index: $nav-z-base + 100
 
 // .nav .title.title-mobile
 //   display: block
@@ -76,13 +78,23 @@ body
     background: white
     display: flex
     justify-content: flex-start
-    z-index: $nav-z-base + 2
+    // z-index: $nav-z-base + 2
+    // li
+    //   z-index: 0
+    //   height: 0
+    //   width: 0
 
 
-
+#header.active .title
+  z-index: -1
+  transition: all 0.25s ease
 #header.active .nav .nav-primary
   opacity: 1
   transition: all 0.25s ease
+  // li
+  //   z-index: $nav-z-base + 2
+  //   height: 100%
+  //   width: 100%
 
 .nav-primary ul
   height: 100%

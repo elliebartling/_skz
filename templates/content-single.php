@@ -12,7 +12,7 @@
     </div>
     <footer class="entry-footer">
     <div class="skeptical-divider">
-      <img src="<?php asset_path('images/logo.png'); ?>" />
+      <img src="<?php echo asset_path('images/logo.png'); ?>" />
     </div>
     <?php dynamic_sidebar('sidebar-article-footer'); ?>
   </footer>

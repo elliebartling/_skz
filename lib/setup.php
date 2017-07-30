@@ -108,12 +108,9 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-  wp_enqueue_style('sage/css', Assets\asset_path('styles/app.css'), false, null);
-
-  if (is_single() && comments_open() && get_option('thread_comments')) {
-    wp_enqueue_script('comment-reply');
-  }
-
-  wp_enqueue_script('sage/js', Assets\asset_path('scripts/app.js'), ['jquery'], null, true);
+  wp_enqueue_style('app.css', asset_path('styles/app.css'), false, null);
+  wp_enqueue_script('app.js', asset_path('scripts/app.js'), ['jquery'], null, false);
+  wp_enqueue_script('fontawesome', 'https://use.fontawesome.com/314786a105.js', [], null, true);
+  wp_enqueue_style('slick', 'http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"', false, null);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);

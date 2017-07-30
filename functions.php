@@ -28,8 +28,12 @@ foreach ($sage_includes as $file) {
 unset($file, $filepath);
 
 
+/**
+ * Some helper functions
+ */
+
 function asset_path($path) {
-  echo get_stylesheet_directory_uri() . '/dist/'. $path;
+  return get_stylesheet_directory_uri() . '/dist/'. $path;
 }
 
 function SearchFilter($query) {
