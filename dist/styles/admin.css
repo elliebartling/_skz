@@ -2016,7 +2016,7 @@ pre code {
   border: 0;
 }
 
-.form-control, .nav-secondary input, .ninja-forms-field, .give-form-wrap input, .content .search-form input[type="search"] {
+.form-control, .nav-secondary input, #subscribe input, .single #sidebar .widget_ninja_forms_widget input, .give-form-wrap input, .content .search-form input[type="search"] {
   display: block;
   width: 100%;
   padding: 0.5rem 0.75rem;
@@ -2031,37 +2031,37 @@ pre code {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
-.form-control::-ms-expand, .nav-secondary input::-ms-expand, .ninja-forms-field::-ms-expand, .give-form-wrap input::-ms-expand, .content .search-form input[type="search"]::-ms-expand {
+.form-control::-ms-expand, .nav-secondary input::-ms-expand, #subscribe input::-ms-expand, .single #sidebar .widget_ninja_forms_widget input::-ms-expand, .give-form-wrap input::-ms-expand, .content .search-form input[type="search"]::-ms-expand {
   background-color: transparent;
   border: 0;
 }
 
-.form-control:focus, .nav-secondary input:focus, .ninja-forms-field:focus, .give-form-wrap input:focus, .content .search-form input[type="search"]:focus {
+.form-control:focus, .nav-secondary input:focus, #subscribe input:focus, .single #sidebar .widget_ninja_forms_widget input:focus, .give-form-wrap input:focus, .content .search-form input[type="search"]:focus {
   color: #555555;
   background-color: #fff;
   border-color: #57576b;
   outline: none;
 }
 
-.form-control::placeholder, .nav-secondary input::placeholder, .ninja-forms-field::placeholder, .give-form-wrap input::placeholder, .content .search-form input[type="search"]::placeholder {
+.form-control::placeholder, .nav-secondary input::placeholder, #subscribe input::placeholder, .single #sidebar .widget_ninja_forms_widget input::placeholder, .give-form-wrap input::placeholder, .content .search-form input[type="search"]::placeholder {
   color: #b3b3b3;
   opacity: 1;
 }
 
-.form-control:disabled, .nav-secondary input:disabled, .ninja-forms-field:disabled, .give-form-wrap input:disabled, .content .search-form input[type="search"]:disabled, .form-control[readonly], .nav-secondary input[readonly], [readonly].ninja-forms-field, .give-form-wrap input[readonly], .content .search-form input[readonly][type="search"] {
+.form-control:disabled, .nav-secondary input:disabled, #subscribe input:disabled, .single #sidebar .widget_ninja_forms_widget input:disabled, .give-form-wrap input:disabled, .content .search-form input[type="search"]:disabled, .form-control[readonly], .nav-secondary input[readonly], #subscribe input[readonly], .single #sidebar .widget_ninja_forms_widget input[readonly], .give-form-wrap input[readonly], .content .search-form input[readonly][type="search"] {
   background-color: #E6E6E6;
   opacity: 1;
 }
 
-.form-control:disabled, .nav-secondary input:disabled, .ninja-forms-field:disabled, .give-form-wrap input:disabled, .content .search-form input[type="search"]:disabled {
+.form-control:disabled, .nav-secondary input:disabled, #subscribe input:disabled, .single #sidebar .widget_ninja_forms_widget input:disabled, .give-form-wrap input:disabled, .content .search-form input[type="search"]:disabled {
   cursor: not-allowed;
 }
 
-select.form-control:not([size]):not([multiple]), select.ninja-forms-field:not([size]):not([multiple]) {
+select.form-control:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px);
 }
 
-select.form-control:focus::-ms-value, select.ninja-forms-field:focus::-ms-value {
+select.form-control:focus::-ms-value {
   color: #555555;
   background-color: #fff;
 }
@@ -2105,42 +2105,46 @@ select.form-control:focus::-ms-value, select.ninja-forms-field:focus::-ms-value 
   border-width: 1px 0;
 }
 
-.form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control, .nav-secondary .input-group-sm > input.form-control-static, .input-group-sm > .form-control-static.ninja-forms-field, .give-form-wrap .input-group-sm > input.form-control-static, .content .search-form .input-group-sm > input.form-control-static[type="search"],
+.form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control, .nav-secondary .input-group-sm > input.form-control-static, #subscribe .input-group-sm > input.form-control-static, .single #sidebar .widget_ninja_forms_widget .input-group-sm > input.form-control-static, .give-form-wrap .input-group-sm > input.form-control-static, .content .search-form .input-group-sm > input.form-control-static[type="search"],
 .input-group-sm > .form-control-static.input-group-addon,
-.input-group-sm > .input-group-btn > .form-control-static.btn,
-.input-group-sm > .input-group-btn > input.form-control-static.ninja-forms-field[type=button], .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .nav-secondary .input-group-lg > input.form-control-static, .input-group-lg > .form-control-static.ninja-forms-field, .give-form-wrap .input-group-lg > input.form-control-static, .content .search-form .input-group-lg > input.form-control-static[type="search"],
+.input-group-sm > .input-group-btn > .form-control-static.btn, #subscribe
+.input-group-sm > .input-group-btn > input.form-control-static[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-sm > .input-group-btn > input.form-control-static[type=button], .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control, .nav-secondary .input-group-lg > input.form-control-static, #subscribe .input-group-lg > input.form-control-static, .single #sidebar .widget_ninja_forms_widget .input-group-lg > input.form-control-static, .give-form-wrap .input-group-lg > input.form-control-static, .content .search-form .input-group-lg > input.form-control-static[type="search"],
 .input-group-lg > .form-control-static.input-group-addon,
-.input-group-lg > .input-group-btn > .form-control-static.btn,
-.input-group-lg > .input-group-btn > input.form-control-static.ninja-forms-field[type=button] {
+.input-group-lg > .input-group-btn > .form-control-static.btn, #subscribe
+.input-group-lg > .input-group-btn > input.form-control-static[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-lg > .input-group-btn > input.form-control-static[type=button] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.form-control-sm, .input-group-sm > .form-control, .nav-secondary .input-group-sm > input, .input-group-sm > .ninja-forms-field, .give-form-wrap .input-group-sm > input, .content .search-form .input-group-sm > input[type="search"],
+.form-control-sm, .input-group-sm > .form-control, .nav-secondary .input-group-sm > input, #subscribe .input-group-sm > input, .single #sidebar .widget_ninja_forms_widget .input-group-sm > input, .give-form-wrap .input-group-sm > input, .content .search-form .input-group-sm > input[type="search"],
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .btn,
-.input-group-sm > .input-group-btn > input.ninja-forms-field[type=button] {
+.input-group-sm > .input-group-btn > .btn, #subscribe
+.input-group-sm > .input-group-btn > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-sm > .input-group-btn > input[type=button] {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
 }
 
-select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]), .input-group-sm > select.ninja-forms-field:not([size]):not([multiple]),
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
 .input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
   height: 1.8125rem;
 }
 
-.form-control-lg, .input-group-lg > .form-control, .nav-secondary .input-group-lg > input, .input-group-lg > .ninja-forms-field, .give-form-wrap .input-group-lg > input, .content .search-form .input-group-lg > input[type="search"],
+.form-control-lg, .input-group-lg > .form-control, .nav-secondary .input-group-lg > input, #subscribe .input-group-lg > input, .single #sidebar .widget_ninja_forms_widget .input-group-lg > input, .give-form-wrap .input-group-lg > input, .content .search-form .input-group-lg > input[type="search"],
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn,
-.input-group-lg > .input-group-btn > input.ninja-forms-field[type=button] {
+.input-group-lg > .input-group-btn > .btn, #subscribe
+.input-group-lg > .input-group-btn > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-lg > .input-group-btn > input[type=button] {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]), .input-group-lg > select.ninja-forms-field:not([size]):not([multiple]),
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
 .input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
   height: 3.16666667rem;
@@ -2215,7 +2219,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #5cb85c;
 }
 
-.has-success .form-control, .has-success .nav-secondary input, .nav-secondary .has-success input, .has-success .ninja-forms-field, .has-success .give-form-wrap input, .give-form-wrap .has-success input, .has-success .content .search-form input[type="search"], .content .search-form .has-success input[type="search"] {
+.has-success .form-control, .has-success .nav-secondary input, .nav-secondary .has-success input, .has-success #subscribe input, #subscribe .has-success input, .has-success .single #sidebar .widget_ninja_forms_widget input, .single #sidebar .widget_ninja_forms_widget .has-success input, .has-success .give-form-wrap input, .give-form-wrap .has-success input, .has-success .content .search-form input[type="search"], .content .search-form .has-success input[type="search"] {
   border-color: #5cb85c;
 }
 
@@ -2237,7 +2241,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #f0ad4e;
 }
 
-.has-warning .form-control, .has-warning .nav-secondary input, .nav-secondary .has-warning input, .has-warning .ninja-forms-field, .has-warning .give-form-wrap input, .give-form-wrap .has-warning input, .has-warning .content .search-form input[type="search"], .content .search-form .has-warning input[type="search"] {
+.has-warning .form-control, .has-warning .nav-secondary input, .nav-secondary .has-warning input, .has-warning #subscribe input, #subscribe .has-warning input, .has-warning .single #sidebar .widget_ninja_forms_widget input, .single #sidebar .widget_ninja_forms_widget .has-warning input, .has-warning .give-form-wrap input, .give-form-wrap .has-warning input, .has-warning .content .search-form input[type="search"], .content .search-form .has-warning input[type="search"] {
   border-color: #f0ad4e;
 }
 
@@ -2259,7 +2263,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   color: #d9534f;
 }
 
-.has-danger .form-control, .has-danger .nav-secondary input, .nav-secondary .has-danger input, .has-danger .ninja-forms-field, .has-danger .give-form-wrap input, .give-form-wrap .has-danger input, .has-danger .content .search-form input[type="search"], .content .search-form .has-danger input[type="search"] {
+.has-danger .form-control, .has-danger .nav-secondary input, .nav-secondary .has-danger input, .has-danger #subscribe input, #subscribe .has-danger input, .has-danger .single #sidebar .widget_ninja_forms_widget input, .single #sidebar .widget_ninja_forms_widget .has-danger input, .has-danger .give-form-wrap input, .give-form-wrap .has-danger input, .has-danger .content .search-form input[type="search"], .content .search-form .has-danger input[type="search"] {
   border-color: #d9534f;
 }
 
@@ -2297,7 +2301,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     align-items: center;
     margin-bottom: 0;
   }
-  .form-inline .form-control, .nav-secondary form .form-control, .form-inline .nav-secondary input, .nav-secondary .form-inline input, .nav-secondary form input, .form-inline .ninja-forms-field, .nav-secondary form .ninja-forms-field, .form-inline .give-form-wrap input, .give-form-wrap .form-inline input, .form-inline .content .search-form input[type="search"], .content .search-form .form-inline input[type="search"], .nav-secondary form .content .search-form input[type="search"], .content .search-form .nav-secondary form input[type="search"] {
+  .form-inline .form-control, .nav-secondary form .form-control, .form-inline .nav-secondary input, .nav-secondary .form-inline input, .nav-secondary form input, .form-inline #subscribe input, #subscribe .form-inline input, .nav-secondary form #subscribe input, #subscribe .nav-secondary form input, .form-inline .single #sidebar .widget_ninja_forms_widget input, .single #sidebar .widget_ninja_forms_widget .form-inline input, .nav-secondary form .single #sidebar .widget_ninja_forms_widget input, .single #sidebar .widget_ninja_forms_widget .nav-secondary form input, .form-inline .give-form-wrap input, .give-form-wrap .form-inline input, .form-inline .content .search-form input[type="search"], .content .search-form .form-inline input[type="search"], .nav-secondary form .content .search-form input[type="search"], .content .search-form .nav-secondary form input[type="search"] {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -2346,7 +2350,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   }
 }
 
-.btn, input.ninja-forms-field[type=button] {
+.btn, #subscribe input[type=button], .single #sidebar .widget_ninja_forms_widget input[type=button] {
   display: inline-block;
   font-weight: normal;
   line-height: 1.25;
@@ -2361,21 +2365,21 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   transition: all 0.2s ease-in-out;
 }
 
-.btn:focus, input.ninja-forms-field[type=button]:focus, .btn:hover, input.ninja-forms-field[type=button]:hover {
+.btn:focus, #subscribe input[type=button]:focus, .single #sidebar .widget_ninja_forms_widget input[type=button]:focus, .btn:hover, #subscribe input[type=button]:hover, .single #sidebar .widget_ninja_forms_widget input[type=button]:hover {
   text-decoration: none;
 }
 
-.btn:focus, input.ninja-forms-field[type=button]:focus, .btn.focus, input.focus.ninja-forms-field[type=button] {
+.btn:focus, #subscribe input[type=button]:focus, .single #sidebar .widget_ninja_forms_widget input[type=button]:focus, .btn.focus, #subscribe input.focus[type=button], .single #sidebar .widget_ninja_forms_widget input.focus[type=button] {
   outline: 0;
   box-shadow: 0 0 0 2px rgba(30, 30, 37, 0.25);
 }
 
-.btn.disabled, input.disabled.ninja-forms-field[type=button], .btn:disabled, input.ninja-forms-field[type=button]:disabled {
+.btn.disabled, #subscribe input.disabled[type=button], .single #sidebar .widget_ninja_forms_widget input.disabled[type=button], .btn:disabled, #subscribe input[type=button]:disabled, .single #sidebar .widget_ninja_forms_widget input[type=button]:disabled {
   cursor: not-allowed;
   opacity: .65;
 }
 
-.btn:active, input.ninja-forms-field[type=button]:active, .btn.active, input.active.ninja-forms-field[type=button] {
+.btn:active, #subscribe input[type=button]:active, .single #sidebar .widget_ninja_forms_widget input[type=button]:active, .btn.active, #subscribe input.active[type=button], .single #sidebar .widget_ninja_forms_widget input.active[type=button] {
   background-image: none;
 }
 
@@ -2765,13 +2769,13 @@ fieldset[disabled] a.btn {
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > input.ninja-forms-field[type=button] {
+.btn-lg, .btn-group-lg > .btn, #subscribe .btn-group-lg > input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group-lg > input[type=button] {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > input.ninja-forms-field[type=button] {
+.btn-sm, .btn-group-sm > .btn, #subscribe .btn-group-sm > input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group-sm > input[type=button] {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
@@ -2957,43 +2961,69 @@ tbody.collapse.show {
   vertical-align: middle;
 }
 
-.btn-group > .btn, .btn-group > input.ninja-forms-field[type=button],
-.btn-group-vertical > .btn,
-.btn-group-vertical > input.ninja-forms-field[type=button] {
+.btn-group > .btn, #subscribe .btn-group > input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button],
+.btn-group-vertical > .btn, #subscribe
+.btn-group-vertical > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical > input[type=button] {
   position: relative;
   flex: 0 1 auto;
 }
 
-.btn-group > .btn:hover, .btn-group > input.ninja-forms-field[type=button]:hover,
-.btn-group-vertical > .btn:hover,
-.btn-group-vertical > input.ninja-forms-field[type=button]:hover {
+.btn-group > .btn:hover, #subscribe .btn-group > input[type=button]:hover, .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button]:hover,
+.btn-group-vertical > .btn:hover, #subscribe
+.btn-group-vertical > input[type=button]:hover, .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical > input[type=button]:hover {
   z-index: 2;
 }
 
-.btn-group > .btn:focus, .btn-group > input.ninja-forms-field[type=button]:focus, .btn-group > .btn:active, .btn-group > input.ninja-forms-field[type=button]:active, .btn-group > .btn.active, .btn-group > input.active.ninja-forms-field[type=button],
-.btn-group-vertical > .btn:focus,
-.btn-group-vertical > input.ninja-forms-field[type=button]:focus,
-.btn-group-vertical > .btn:active,
-.btn-group-vertical > input.ninja-forms-field[type=button]:active,
-.btn-group-vertical > .btn.active,
-.btn-group-vertical > input.active.ninja-forms-field[type=button] {
+.btn-group > .btn:focus, #subscribe .btn-group > input[type=button]:focus, .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button]:focus, .btn-group > .btn:active, #subscribe .btn-group > input[type=button]:active, .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button]:active, .btn-group > .btn.active, #subscribe .btn-group > input.active[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group > input.active[type=button],
+.btn-group-vertical > .btn:focus, #subscribe
+.btn-group-vertical > input[type=button]:focus, .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical > input[type=button]:focus,
+.btn-group-vertical > .btn:active, #subscribe
+.btn-group-vertical > input[type=button]:active, .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical > input[type=button]:active,
+.btn-group-vertical > .btn.active, #subscribe
+.btn-group-vertical > input.active[type=button], .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical > input.active[type=button] {
   z-index: 2;
 }
 
-.btn-group .btn + .btn, .btn-group input.ninja-forms-field[type=button] + .btn, .btn-group .btn + input.ninja-forms-field[type=button], .btn-group input.ninja-forms-field[type=button] + input.ninja-forms-field[type=button],
+.btn-group .btn + .btn, .btn-group #subscribe input[type=button] + .btn, #subscribe .btn-group input[type=button] + .btn, .btn-group .single #sidebar .widget_ninja_forms_widget input[type=button] + .btn, .single #sidebar .widget_ninja_forms_widget .btn-group input[type=button] + .btn, .btn-group #subscribe .btn + input[type=button], #subscribe .btn-group .btn + input[type=button], .btn-group #subscribe input[type=button] + input[type=button], #subscribe .btn-group input[type=button] + input[type=button], .btn-group .single #sidebar .widget_ninja_forms_widget .btn + input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group .btn + input[type=button], .btn-group .single #sidebar .widget_ninja_forms_widget input[type=button] + input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group input[type=button] + input[type=button],
 .btn-group .btn + .btn-group,
-.btn-group input.ninja-forms-field[type=button] + .btn-group,
+.btn-group #subscribe input[type=button] + .btn-group, #subscribe
+.btn-group input[type=button] + .btn-group,
+.btn-group .single #sidebar .widget_ninja_forms_widget input[type=button] + .btn-group, .single #sidebar .widget_ninja_forms_widget
+.btn-group input[type=button] + .btn-group,
 .btn-group .btn-group + .btn,
-.btn-group .btn-group + input.ninja-forms-field[type=button],
+.btn-group #subscribe .btn-group + input[type=button], #subscribe
+.btn-group .btn-group + input[type=button],
+.btn-group .single #sidebar .widget_ninja_forms_widget .btn-group + input[type=button], .single #sidebar .widget_ninja_forms_widget
+.btn-group .btn-group + input[type=button],
 .btn-group .btn-group + .btn-group,
 .btn-group-vertical .btn + .btn,
-.btn-group-vertical input.ninja-forms-field[type=button] + .btn,
-.btn-group-vertical .btn + input.ninja-forms-field[type=button],
-.btn-group-vertical input.ninja-forms-field[type=button] + input.ninja-forms-field[type=button],
+.btn-group-vertical #subscribe input[type=button] + .btn, #subscribe
+.btn-group-vertical input[type=button] + .btn,
+.btn-group-vertical .single #sidebar .widget_ninja_forms_widget input[type=button] + .btn, .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical input[type=button] + .btn,
+.btn-group-vertical #subscribe .btn + input[type=button], #subscribe
+.btn-group-vertical .btn + input[type=button],
+.btn-group-vertical #subscribe input[type=button] + input[type=button], #subscribe
+.btn-group-vertical input[type=button] + input[type=button],
+.btn-group-vertical .single #sidebar .widget_ninja_forms_widget .btn + input[type=button], .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical .btn + input[type=button],
+.btn-group-vertical .single #sidebar .widget_ninja_forms_widget input[type=button] + input[type=button], .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical input[type=button] + input[type=button],
 .btn-group-vertical .btn + .btn-group,
-.btn-group-vertical input.ninja-forms-field[type=button] + .btn-group,
+.btn-group-vertical #subscribe input[type=button] + .btn-group, #subscribe
+.btn-group-vertical input[type=button] + .btn-group,
+.btn-group-vertical .single #sidebar .widget_ninja_forms_widget input[type=button] + .btn-group, .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical input[type=button] + .btn-group,
 .btn-group-vertical .btn-group + .btn,
-.btn-group-vertical .btn-group + input.ninja-forms-field[type=button],
+.btn-group-vertical #subscribe .btn-group + input[type=button], #subscribe
+.btn-group-vertical .btn-group + input[type=button],
+.btn-group-vertical .single #sidebar .widget_ninja_forms_widget .btn-group + input[type=button], .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical .btn-group + input[type=button],
 .btn-group-vertical .btn-group + .btn-group {
   margin-left: -1px;
 }
@@ -3007,20 +3037,20 @@ tbody.collapse.show {
   width: auto;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input.ninja-forms-field[type=button]:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #subscribe .btn-group > input[type=button]:not(:first-child):not(:last-child):not(.dropdown-toggle), .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button]:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .btn-group > input.ninja-forms-field[type=button]:first-child {
+.btn-group > .btn:first-child, #subscribe .btn-group > input[type=button]:first-child, .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button]:first-child {
   margin-left: 0;
 }
 
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input.ninja-forms-field[type=button]:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #subscribe .btn-group > input[type=button]:first-child:not(:last-child):not(.dropdown-toggle), .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button]:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), .btn-group > input.ninja-forms-field[type=button]:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), #subscribe .btn-group > input[type=button]:last-child:not(:first-child), .single #sidebar .widget_ninja_forms_widget .btn-group > input[type=button]:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -3030,17 +3060,17 @@ tbody.collapse.show {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group > .btn-group:not(:first-child):not(:last-child) > input.ninja-forms-field[type=button] {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #subscribe .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type=button] {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group > .btn-group:first-child:not(:last-child) > input.ninja-forms-field[type=button]:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, #subscribe .btn-group > .btn-group:first-child:not(:last-child) > input[type=button]:last-child, .single #sidebar .widget_ninja_forms_widget .btn-group > .btn-group:first-child:not(:last-child) > input[type=button]:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group > .btn-group:last-child:not(:first-child) > input.ninja-forms-field[type=button]:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, #subscribe .btn-group > .btn-group:last-child:not(:first-child) > input[type=button]:first-child, .single #sidebar .widget_ninja_forms_widget .btn-group > .btn-group:last-child:not(:first-child) > input[type=button]:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -3050,21 +3080,21 @@ tbody.collapse.show {
   outline: 0;
 }
 
-.btn + .dropdown-toggle-split, input.ninja-forms-field[type=button] + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, #subscribe input[type=button] + .dropdown-toggle-split, .single #sidebar .widget_ninja_forms_widget input[type=button] + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
 
-.btn + .dropdown-toggle-split::after, input.ninja-forms-field[type=button] + .dropdown-toggle-split::after {
+.btn + .dropdown-toggle-split::after, #subscribe input[type=button] + .dropdown-toggle-split::after, .single #sidebar .widget_ninja_forms_widget input[type=button] + .dropdown-toggle-split::after {
   margin-left: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > input.ninja-forms-field[type=button] + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, #subscribe .btn-group-sm > input[type=button] + .dropdown-toggle-split, .single #sidebar .widget_ninja_forms_widget .btn-group-sm > input[type=button] + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > input.ninja-forms-field[type=button] + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, #subscribe .btn-group-lg > input[type=button] + .dropdown-toggle-split, .single #sidebar .widget_ninja_forms_widget .btn-group-lg > input[type=button] + .dropdown-toggle-split {
   padding-right: 1.125rem;
   padding-left: 1.125rem;
 }
@@ -3076,57 +3106,62 @@ tbody.collapse.show {
   justify-content: center;
 }
 
-.btn-group-vertical .btn, .btn-group-vertical input.ninja-forms-field[type=button],
+.btn-group-vertical .btn, .btn-group-vertical #subscribe input[type=button], #subscribe .btn-group-vertical input[type=button], .btn-group-vertical .single #sidebar .widget_ninja_forms_widget input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group-vertical input[type=button],
 .btn-group-vertical .btn-group {
   width: 100%;
 }
 
-.btn-group-vertical > .btn + .btn, .btn-group-vertical > input.ninja-forms-field[type=button] + .btn, .btn-group-vertical > .btn + input.ninja-forms-field[type=button], .btn-group-vertical > input.ninja-forms-field[type=button] + input.ninja-forms-field[type=button],
-.btn-group-vertical > .btn + .btn-group,
-.btn-group-vertical > input.ninja-forms-field[type=button] + .btn-group,
-.btn-group-vertical > .btn-group + .btn,
-.btn-group-vertical > .btn-group + input.ninja-forms-field[type=button],
+.btn-group-vertical > .btn + .btn, #subscribe .btn-group-vertical > input[type=button] + .btn, .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > input[type=button] + .btn, #subscribe .btn-group-vertical > .btn + input[type=button], #subscribe .btn-group-vertical > input[type=button] + input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > .btn + input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > input[type=button] + input[type=button],
+.btn-group-vertical > .btn + .btn-group, #subscribe
+.btn-group-vertical > input[type=button] + .btn-group, .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical > input[type=button] + .btn-group,
+.btn-group-vertical > .btn-group + .btn, #subscribe
+.btn-group-vertical > .btn-group + input[type=button], .single #sidebar .widget_ninja_forms_widget
+.btn-group-vertical > .btn-group + input[type=button],
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > input.ninja-forms-field[type=button]:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), #subscribe .btn-group-vertical > input[type=button]:not(:first-child):not(:last-child), .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > input[type=button]:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > input.ninja-forms-field[type=button]:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), #subscribe .btn-group-vertical > input[type=button]:first-child:not(:last-child), .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > input[type=button]:first-child:not(:last-child) {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > input.ninja-forms-field[type=button]:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), #subscribe .btn-group-vertical > input[type=button]:last-child:not(:first-child), .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > input[type=button]:last-child:not(:first-child) {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input.ninja-forms-field[type=button] {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #subscribe .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type=button] {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .btn-group-vertical > .btn-group:first-child:not(:last-child) > input.ninja-forms-field[type=button]:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #subscribe .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type=button]:last-child, .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type=button]:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .btn-group-vertical > .btn-group:last-child:not(:first-child) > input.ninja-forms-field[type=button]:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #subscribe .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type=button]:first-child, .single #sidebar .widget_ninja_forms_widget .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type=button]:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-[data-toggle="buttons"] > .btn input[type="radio"], [data-toggle="buttons"] > input.ninja-forms-field[type=button] input[type="radio"],
-[data-toggle="buttons"] > .btn input[type="checkbox"],
-[data-toggle="buttons"] > input.ninja-forms-field[type=button] input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
-[data-toggle="buttons"] > .btn-group > input.ninja-forms-field[type=button] input[type="radio"],
-[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
-[data-toggle="buttons"] > .btn-group > input.ninja-forms-field[type=button] input[type="checkbox"] {
+[data-toggle="buttons"] > .btn input[type="radio"], #subscribe [data-toggle="buttons"] > input[type=button] input[type="radio"], .single #sidebar .widget_ninja_forms_widget [data-toggle="buttons"] > input[type=button] input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="checkbox"], #subscribe
+[data-toggle="buttons"] > input[type=button] input[type="checkbox"], .single #sidebar .widget_ninja_forms_widget
+[data-toggle="buttons"] > input[type=button] input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"], #subscribe
+[data-toggle="buttons"] > .btn-group > input[type=button] input[type="radio"], .single #sidebar .widget_ninja_forms_widget
+[data-toggle="buttons"] > .btn-group > input[type=button] input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], #subscribe
+[data-toggle="buttons"] > .btn-group > input[type=button] input[type="checkbox"], .single #sidebar .widget_ninja_forms_widget
+[data-toggle="buttons"] > .btn-group > input[type=button] input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
@@ -3138,7 +3173,7 @@ tbody.collapse.show {
   width: 100%;
 }
 
-.input-group .form-control, .input-group .nav-secondary input, .nav-secondary .input-group input, .input-group .ninja-forms-field, .input-group .give-form-wrap input, .give-form-wrap .input-group input, .input-group .content .search-form input[type="search"], .content .search-form .input-group input[type="search"] {
+.input-group .form-control, .input-group .nav-secondary input, .nav-secondary .input-group input, .input-group #subscribe input, #subscribe .input-group input, .input-group .single #sidebar .widget_ninja_forms_widget input, .single #sidebar .widget_ninja_forms_widget .input-group input, .input-group .give-form-wrap input, .give-form-wrap .input-group input, .input-group .content .search-form input[type="search"], .content .search-form .input-group input[type="search"] {
   position: relative;
   z-index: 2;
   flex: 1 1 auto;
@@ -3146,7 +3181,7 @@ tbody.collapse.show {
   margin-bottom: 0;
 }
 
-.input-group .form-control:focus, .input-group .nav-secondary input:focus, .nav-secondary .input-group input:focus, .input-group .ninja-forms-field:focus, .input-group .give-form-wrap input:focus, .give-form-wrap .input-group input:focus, .input-group .content .search-form input[type="search"]:focus, .content .search-form .input-group input[type="search"]:focus, .input-group .form-control:active, .input-group .nav-secondary input:active, .nav-secondary .input-group input:active, .input-group .ninja-forms-field:active, .input-group .give-form-wrap input:active, .give-form-wrap .input-group input:active, .input-group .content .search-form input[type="search"]:active, .content .search-form .input-group input[type="search"]:active, .input-group .form-control:hover, .input-group .nav-secondary input:hover, .nav-secondary .input-group input:hover, .input-group .ninja-forms-field:hover, .input-group .give-form-wrap input:hover, .give-form-wrap .input-group input:hover, .input-group .content .search-form input[type="search"]:hover, .content .search-form .input-group input[type="search"]:hover {
+.input-group .form-control:focus, .input-group .nav-secondary input:focus, .nav-secondary .input-group input:focus, .input-group #subscribe input:focus, #subscribe .input-group input:focus, .input-group .single #sidebar .widget_ninja_forms_widget input:focus, .single #sidebar .widget_ninja_forms_widget .input-group input:focus, .input-group .give-form-wrap input:focus, .give-form-wrap .input-group input:focus, .input-group .content .search-form input[type="search"]:focus, .content .search-form .input-group input[type="search"]:focus, .input-group .form-control:active, .input-group .nav-secondary input:active, .nav-secondary .input-group input:active, .input-group #subscribe input:active, #subscribe .input-group input:active, .input-group .single #sidebar .widget_ninja_forms_widget input:active, .single #sidebar .widget_ninja_forms_widget .input-group input:active, .input-group .give-form-wrap input:active, .give-form-wrap .input-group input:active, .input-group .content .search-form input[type="search"]:active, .content .search-form .input-group input[type="search"]:active, .input-group .form-control:hover, .input-group .nav-secondary input:hover, .nav-secondary .input-group input:hover, .input-group #subscribe input:hover, #subscribe .input-group input:hover, .input-group .single #sidebar .widget_ninja_forms_widget input:hover, .single #sidebar .widget_ninja_forms_widget .input-group input:hover, .input-group .give-form-wrap input:hover, .give-form-wrap .input-group input:hover, .input-group .content .search-form input[type="search"]:hover, .content .search-form .input-group input[type="search"]:hover {
   z-index: 3;
 }
 
@@ -3155,7 +3190,10 @@ tbody.collapse.show {
 .input-group .form-control,
 .input-group .nav-secondary input, .nav-secondary
 .input-group input,
-.input-group .ninja-forms-field,
+.input-group #subscribe input, #subscribe
+.input-group input,
+.input-group .single #sidebar .widget_ninja_forms_widget input, .single #sidebar .widget_ninja_forms_widget
+.input-group input,
 .input-group .give-form-wrap input, .give-form-wrap
 .input-group input,
 .input-group .content .search-form input[type="search"], .content .search-form
@@ -3170,7 +3208,10 @@ tbody.collapse.show {
 .input-group .form-control:not(:first-child):not(:last-child),
 .input-group .nav-secondary input:not(:first-child):not(:last-child), .nav-secondary
 .input-group input:not(:first-child):not(:last-child),
-.input-group .ninja-forms-field:not(:first-child):not(:last-child),
+.input-group #subscribe input:not(:first-child):not(:last-child), #subscribe
+.input-group input:not(:first-child):not(:last-child),
+.input-group .single #sidebar .widget_ninja_forms_widget input:not(:first-child):not(:last-child), .single #sidebar .widget_ninja_forms_widget
+.input-group input:not(:first-child):not(:last-child),
 .input-group .give-form-wrap input:not(:first-child):not(:last-child), .give-form-wrap
 .input-group input:not(:first-child):not(:last-child),
 .input-group .content .search-form input[type="search"]:not(:first-child):not(:last-child), .content .search-form
@@ -3197,19 +3238,21 @@ tbody.collapse.show {
   border-radius: 0.25rem;
 }
 
-.input-group-addon.form-control-sm, .nav-secondary .input-group-sm > input.input-group-addon, .give-form-wrap .input-group-sm > input.input-group-addon, .content .search-form .input-group-sm > input.input-group-addon[type="search"],
+.input-group-addon.form-control-sm, .nav-secondary .input-group-sm > input.input-group-addon, #subscribe .input-group-sm > input.input-group-addon, .single #sidebar .widget_ninja_forms_widget .input-group-sm > input.input-group-addon, .give-form-wrap .input-group-sm > input.input-group-addon, .content .search-form .input-group-sm > input.input-group-addon[type="search"],
 .input-group-sm > .input-group-addon,
-.input-group-sm > .input-group-btn > .input-group-addon.btn,
-.input-group-sm > .input-group-btn > input.input-group-addon.ninja-forms-field[type=button] {
+.input-group-sm > .input-group-btn > .input-group-addon.btn, #subscribe
+.input-group-sm > .input-group-btn > input.input-group-addon[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-sm > .input-group-btn > input.input-group-addon[type=button] {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem;
 }
 
-.input-group-addon.form-control-lg, .nav-secondary .input-group-lg > input.input-group-addon, .give-form-wrap .input-group-lg > input.input-group-addon, .content .search-form .input-group-lg > input.input-group-addon[type="search"],
+.input-group-addon.form-control-lg, .nav-secondary .input-group-lg > input.input-group-addon, #subscribe .input-group-lg > input.input-group-addon, .single #sidebar .widget_ninja_forms_widget .input-group-lg > input.input-group-addon, .give-form-wrap .input-group-lg > input.input-group-addon, .content .search-form .input-group-lg > input.input-group-addon[type="search"],
 .input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .input-group-addon.btn,
-.input-group-lg > .input-group-btn > input.input-group-addon.ninja-forms-field[type=button] {
+.input-group-lg > .input-group-btn > .input-group-addon.btn, #subscribe
+.input-group-lg > .input-group-btn > input.input-group-addon[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-lg > .input-group-btn > input.input-group-addon[type=button] {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
@@ -3220,17 +3263,21 @@ tbody.collapse.show {
   margin-top: 0;
 }
 
-.input-group .form-control:not(:last-child), .input-group .nav-secondary input:not(:last-child), .nav-secondary .input-group input:not(:last-child), .input-group .ninja-forms-field:not(:last-child), .input-group .give-form-wrap input:not(:last-child), .give-form-wrap .input-group input:not(:last-child), .input-group .content .search-form input[type="search"]:not(:last-child), .content .search-form .input-group input[type="search"]:not(:last-child),
+.input-group .form-control:not(:last-child), .input-group .nav-secondary input:not(:last-child), .nav-secondary .input-group input:not(:last-child), .input-group #subscribe input:not(:last-child), #subscribe .input-group input:not(:last-child), .input-group .single #sidebar .widget_ninja_forms_widget input:not(:last-child), .single #sidebar .widget_ninja_forms_widget .input-group input:not(:last-child), .input-group .give-form-wrap input:not(:last-child), .give-form-wrap .input-group input:not(:last-child), .input-group .content .search-form input[type="search"]:not(:last-child), .content .search-form .input-group input[type="search"]:not(:last-child),
 .input-group-addon:not(:last-child),
-.input-group-btn:not(:last-child) > .btn,
-.input-group-btn:not(:last-child) > input.ninja-forms-field[type=button],
-.input-group-btn:not(:last-child) > .btn-group > .btn,
-.input-group-btn:not(:last-child) > .btn-group > input.ninja-forms-field[type=button],
+.input-group-btn:not(:last-child) > .btn, #subscribe
+.input-group-btn:not(:last-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:last-child) > input[type=button],
+.input-group-btn:not(:last-child) > .btn-group > .btn, #subscribe
+.input-group-btn:not(:last-child) > .btn-group > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:last-child) > .btn-group > input[type=button],
 .input-group-btn:not(:last-child) > .dropdown-toggle,
-.input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:first-child) > input.ninja-forms-field[type=button]:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn,
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input.ninja-forms-field[type=button] {
+.input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle), #subscribe
+.input-group-btn:not(:first-child) > input[type=button]:not(:last-child):not(.dropdown-toggle), .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:first-child) > input[type=button]:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn, #subscribe
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type=button] {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
@@ -3239,22 +3286,26 @@ tbody.collapse.show {
   border-right: 0;
 }
 
-.input-group .form-control:not(:first-child), .input-group .nav-secondary input:not(:first-child), .nav-secondary .input-group input:not(:first-child), .input-group .ninja-forms-field:not(:first-child), .input-group .give-form-wrap input:not(:first-child), .give-form-wrap .input-group input:not(:first-child), .input-group .content .search-form input[type="search"]:not(:first-child), .content .search-form .input-group input[type="search"]:not(:first-child),
+.input-group .form-control:not(:first-child), .input-group .nav-secondary input:not(:first-child), .nav-secondary .input-group input:not(:first-child), .input-group #subscribe input:not(:first-child), #subscribe .input-group input:not(:first-child), .input-group .single #sidebar .widget_ninja_forms_widget input:not(:first-child), .single #sidebar .widget_ninja_forms_widget .input-group input:not(:first-child), .input-group .give-form-wrap input:not(:first-child), .give-form-wrap .input-group input:not(:first-child), .input-group .content .search-form input[type="search"]:not(:first-child), .content .search-form .input-group input[type="search"]:not(:first-child),
 .input-group-addon:not(:first-child),
-.input-group-btn:not(:first-child) > .btn,
-.input-group-btn:not(:first-child) > input.ninja-forms-field[type=button],
-.input-group-btn:not(:first-child) > .btn-group > .btn,
-.input-group-btn:not(:first-child) > .btn-group > input.ninja-forms-field[type=button],
+.input-group-btn:not(:first-child) > .btn, #subscribe
+.input-group-btn:not(:first-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:first-child) > input[type=button],
+.input-group-btn:not(:first-child) > .btn-group > .btn, #subscribe
+.input-group-btn:not(:first-child) > .btn-group > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:first-child) > .btn-group > input[type=button],
 .input-group-btn:not(:first-child) > .dropdown-toggle,
-.input-group-btn:not(:last-child) > .btn:not(:first-child),
-.input-group-btn:not(:last-child) > input.ninja-forms-field[type=button]:not(:first-child),
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn,
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input.ninja-forms-field[type=button] {
+.input-group-btn:not(:last-child) > .btn:not(:first-child), #subscribe
+.input-group-btn:not(:last-child) > input[type=button]:not(:first-child), .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:last-child) > input[type=button]:not(:first-child),
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn, #subscribe
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type=button] {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.form-control + .input-group-addon:not(:first-child), .nav-secondary input + .input-group-addon:not(:first-child), .ninja-forms-field + .input-group-addon:not(:first-child), .give-form-wrap input + .input-group-addon:not(:first-child), .content .search-form input[type="search"] + .input-group-addon:not(:first-child) {
+.form-control + .input-group-addon:not(:first-child), .nav-secondary input + .input-group-addon:not(:first-child), #subscribe input + .input-group-addon:not(:first-child), .single #sidebar .widget_ninja_forms_widget input + .input-group-addon:not(:first-child), .give-form-wrap input + .input-group-addon:not(:first-child), .content .search-form input[type="search"] + .input-group-addon:not(:first-child) {
   border-left: 0;
 }
 
@@ -3264,31 +3315,31 @@ tbody.collapse.show {
   white-space: nowrap;
 }
 
-.input-group-btn > .btn, .input-group-btn > input.ninja-forms-field[type=button] {
+.input-group-btn > .btn, #subscribe .input-group-btn > input[type=button], .single #sidebar .widget_ninja_forms_widget .input-group-btn > input[type=button] {
   position: relative;
   flex: 1;
 }
 
-.input-group-btn > .btn + .btn, .input-group-btn > input.ninja-forms-field[type=button] + .btn, .input-group-btn > .btn + input.ninja-forms-field[type=button], .input-group-btn > input.ninja-forms-field[type=button] + input.ninja-forms-field[type=button] {
+.input-group-btn > .btn + .btn, #subscribe .input-group-btn > input[type=button] + .btn, .single #sidebar .widget_ninja_forms_widget .input-group-btn > input[type=button] + .btn, #subscribe .input-group-btn > .btn + input[type=button], #subscribe .input-group-btn > input[type=button] + input[type=button], .single #sidebar .widget_ninja_forms_widget .input-group-btn > .btn + input[type=button], .single #sidebar .widget_ninja_forms_widget .input-group-btn > input[type=button] + input[type=button] {
   margin-left: -1px;
 }
 
-.input-group-btn > .btn:focus, .input-group-btn > input.ninja-forms-field[type=button]:focus, .input-group-btn > .btn:active, .input-group-btn > input.ninja-forms-field[type=button]:active, .input-group-btn > .btn:hover, .input-group-btn > input.ninja-forms-field[type=button]:hover {
+.input-group-btn > .btn:focus, #subscribe .input-group-btn > input[type=button]:focus, .single #sidebar .widget_ninja_forms_widget .input-group-btn > input[type=button]:focus, .input-group-btn > .btn:active, #subscribe .input-group-btn > input[type=button]:active, .single #sidebar .widget_ninja_forms_widget .input-group-btn > input[type=button]:active, .input-group-btn > .btn:hover, #subscribe .input-group-btn > input[type=button]:hover, .single #sidebar .widget_ninja_forms_widget .input-group-btn > input[type=button]:hover {
   z-index: 3;
 }
 
-.input-group-btn:not(:last-child) > .btn, .input-group-btn:not(:last-child) > input.ninja-forms-field[type=button],
+.input-group-btn:not(:last-child) > .btn, #subscribe .input-group-btn:not(:last-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget .input-group-btn:not(:last-child) > input[type=button],
 .input-group-btn:not(:last-child) > .btn-group {
   margin-right: -1px;
 }
 
-.input-group-btn:not(:first-child) > .btn, .input-group-btn:not(:first-child) > input.ninja-forms-field[type=button],
+.input-group-btn:not(:first-child) > .btn, #subscribe .input-group-btn:not(:first-child) > input[type=button], .single #sidebar .widget_ninja_forms_widget .input-group-btn:not(:first-child) > input[type=button],
 .input-group-btn:not(:first-child) > .btn-group {
   z-index: 2;
   margin-left: -1px;
 }
 
-.input-group-btn:not(:first-child) > .btn:focus, .input-group-btn:not(:first-child) > input.ninja-forms-field[type=button]:focus, .input-group-btn:not(:first-child) > .btn:active, .input-group-btn:not(:first-child) > input.ninja-forms-field[type=button]:active, .input-group-btn:not(:first-child) > .btn:hover, .input-group-btn:not(:first-child) > input.ninja-forms-field[type=button]:hover,
+.input-group-btn:not(:first-child) > .btn:focus, #subscribe .input-group-btn:not(:first-child) > input[type=button]:focus, .single #sidebar .widget_ninja_forms_widget .input-group-btn:not(:first-child) > input[type=button]:focus, .input-group-btn:not(:first-child) > .btn:active, #subscribe .input-group-btn:not(:first-child) > input[type=button]:active, .single #sidebar .widget_ninja_forms_widget .input-group-btn:not(:first-child) > input[type=button]:active, .input-group-btn:not(:first-child) > .btn:hover, #subscribe .input-group-btn:not(:first-child) > input[type=button]:hover, .single #sidebar .widget_ninja_forms_widget .input-group-btn:not(:first-child) > input[type=button]:hover,
 .input-group-btn:not(:first-child) > .btn-group:focus,
 .input-group-btn:not(:first-child) > .btn-group:active,
 .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -4343,7 +4394,7 @@ tbody.collapse.show {
   display: none;
 }
 
-.btn .badge, input.ninja-forms-field[type=button] .badge {
+.btn .badge, #subscribe input[type=button] .badge, .single #sidebar .widget_ninja_forms_widget input[type=button] .badge {
   position: relative;
   top: -1px;
 }
@@ -8231,7 +8282,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
   color: #070709;
 }
 
-.btn, input.ninja-forms-field[type=button] {
+.btn, #subscribe input[type=button], .single #sidebar .widget_ninja_forms_widget input[type=button] {
   border-radius: 0px;
   font-family: "TradeGothic";
   text-transform: uppercase;
@@ -8239,13 +8290,13 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
   cursor: pointer;
 }
 
-.btn.btn-outline, input.btn-outline.ninja-forms-field[type=button] {
+.btn.btn-outline, #subscribe input.btn-outline[type=button], .single #sidebar .widget_ninja_forms_widget input.btn-outline[type=button] {
   border: 2px solid #08A3C6;
   background: transparent;
   color: #08A3C6;
 }
 
-.btn.btn-outline:hover, input.btn-outline.ninja-forms-field[type=button]:hover {
+.btn.btn-outline:hover, #subscribe input.btn-outline[type=button]:hover, .single #sidebar .widget_ninja_forms_widget input.btn-outline[type=button]:hover {
   border-color: #045264;
   color: #045264;
 }
@@ -8864,7 +8915,7 @@ time {
   max-width: 300px;
   width: 40%;
   height: 200px;
-  background-image: url(../../dist/img/logo-white.png);
+  background-image: url(../images/../logo-white.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -8878,19 +8929,19 @@ time {
   margin-bottom: 1.5rem;
 }
 
-.ninja-forms-field {
+#subscribe input, .single #sidebar .widget_ninja_forms_widget input {
   border-radius: 0px;
   border-color: transparent;
 }
 
-input.ninja-forms-field[type=button] {
+#subscribe input[type=button], .single #sidebar .widget_ninja_forms_widget input[type=button] {
   background: #1E1E25;
   text-transform: uppercase;
   font-family: "TradeGothic";
   color: white;
 }
 
-input.ninja-forms-field[type=button]:hover {
+#subscribe input[type=button]:hover, .single #sidebar .widget_ninja_forms_widget input[type=button]:hover {
   background: #08A3C6;
 }
 
@@ -9748,7 +9799,7 @@ nf-field:first-of-type {
   text-align: center;
 }
 
-.page.donate .main .btn, .page.donate .main input.ninja-forms-field[type=button] {
+.page.donate .main .btn, .page.donate .main #subscribe input[type=button], #subscribe .page.donate .main input[type=button], .page.donate .main .single #sidebar .widget_ninja_forms_widget input[type=button], .single #sidebar .widget_ninja_forms_widget .page.donate .main input[type=button] {
   margin-bottom: 0.5rem;
 }
 

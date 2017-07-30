@@ -9,7 +9,7 @@
     max-width: 300px
     width: 40%
     height: 200px
-    background-image: url(../../dist/img/logo-white.png)
+    background-image: url(../images/../logo-white.png)
     background-repeat: no-repeat
     background-size: contain
     position: absolute
@@ -23,19 +23,19 @@
     margin-bottom: 1.5rem
 
 
-.ninja-forms-field
-  @extend .form-control
-  border-radius: 0px
-  border-color: transparent
+  input
+    @extend .form-control
+    border-radius: 0px
+    border-color: transparent
 
-input.ninja-forms-field[type=button]
-  @extend .btn
-  background: $brand-primary
-  text-transform: uppercase
-  font-family: $trade-gothic
-  color: white
-  &:hover
-    background: $brand-info
+  input[type=button]
+    @extend .btn
+    background: $brand-primary
+    text-transform: uppercase
+    font-family: $trade-gothic
+    color: white
+    &:hover
+      background: $brand-info
 
 .nf-field-container
   margin-bottom: 0px
