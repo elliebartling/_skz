@@ -20,6 +20,7 @@ mix.js('assets/scripts/app.js', 'dist/scripts')
    .copyDirectory('assets/images', 'dist/images')
    .copyDirectory('assets/fonts', 'dist/fonts')
    .fastSass('assets/styles/app.sass', 'dist/styles')
+   .fastSass('assets/styles/admin.scss', 'dist/styles')
    .browserSync({
        proxy: 'skeptic.dev',
        files: [
