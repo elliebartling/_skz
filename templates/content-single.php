@@ -3,6 +3,7 @@
     <header id="entry-header">
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php get_template_part('partials/entry-meta'); ?>
+      <?php get_template_part('partials/entry-author'); ?>
     </header>
     <div class="entry-image">
       <?php the_post_thumbnail(); ?>
