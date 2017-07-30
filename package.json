@@ -1,0 +1,39 @@
+{
+  "name": "skeptical-libertarian",
+  "version": "2.2.0",
+  "author": "Ellen Bartling",
+  "homepage": "https://roots.io/sage/",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roots/sage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/roots/sage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "engines": {
+    "node": ">= 4.5"
+  },
+  "devDependencies": {
+    "laravel-mix": "^1.4.2",
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "breakpoint-sass": "^2.7.1",
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.6.0"
+  }
+}
