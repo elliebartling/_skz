@@ -5,7 +5,7 @@
       <?php get_template_part('partials/entry-meta'); ?>
       <?php get_template_part('partials/entry-author'); ?>
     </header>
-    <?php if(the_post_thumbnail()): ?>
+    <?php if(has_post_thumbnail()): ?>
       <div class="entry-image">
         <?php the_post_thumbnail(); ?>
       </div>

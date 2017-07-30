@@ -9320,13 +9320,13 @@ time {
   height: auto;
 }
 
-.single article img.alignright {
+.single article .alignright {
   float: right;
   margin-left: 10px;
   margin-bottom: 10px;
 }
 
-.single article img.alignleft {
+.single article .alignleft {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
