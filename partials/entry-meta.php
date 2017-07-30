@@ -4,5 +4,5 @@
       $tag = get_the_tags()[0];
     } ?>
 
-    | <a href="<?php get_tag_link($tag->term_id); ?>"><span class="tags"><?php echo $tag->name; ?></span></a>
+    | <a href="<?php echo get_tag_link($tag->term_id); ?>"><span class="tags"><?php echo $tag->name; ?></span></a>
 </div>
