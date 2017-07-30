@@ -5,9 +5,11 @@
       <?php get_template_part('partials/entry-meta'); ?>
       <?php get_template_part('partials/entry-author'); ?>
     </header>
-    <div class="entry-image">
-      <?php the_post_thumbnail(); ?>
-    </div>
+    <?php if(the_post_thumbnail()): ?>
+      <div class="entry-image">
+        <?php the_post_thumbnail(); ?>
+      </div>
+    <?php endif; ?>
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
