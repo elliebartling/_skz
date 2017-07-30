@@ -8934,7 +8934,7 @@ time {
   flex-wrap: wrap;
 }
 
-#subscribe form p:not(id), .single #sidebar .widget_ninja_forms_widget form p:not(id) {
+#subscribe form p:not(#subscribe-email), .single #sidebar .widget_ninja_forms_widget form p:not(#subscribe-email), #subscribe form p:not(#subscribe-submit), .single #sidebar .widget_ninja_forms_widget form p:not(#subscribe-submit) {
   width: 100%;
 }
 
