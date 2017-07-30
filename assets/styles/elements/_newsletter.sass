@@ -22,29 +22,35 @@
     color: $brand-primary
     margin-bottom: 1.5rem
 
+  form
+    display: flex
+    flex-wrap: wrap
 
-  input
-    @extend .form-control
-    border-radius: 0px
-    border-color: transparent
+    p:not(id)
+      width: 100%
 
-  input[type=button]
-    @extend .btn
-    background: $brand-primary
-    text-transform: uppercase
-    font-family: $trade-gothic
-    color: white
-    &:hover
-      background: $brand-info
+    input
+      @extend .form-control
+      border-radius: 0px
+      border-color: transparent
 
-.nf-field-container
-  margin-bottom: 0px
+    input[type=submit]
+      @extend .btn
+      background: $brand-primary
+      text-transform: uppercase
+      font-family: $trade-gothic
+      color: white
+      &:hover
+        background: $brand-info
 
-nf-fields-wrap
-  display: flex
-  flex-direction: row
-  width: 45%
-
-nf-field:first-of-type
-  width: 100%
-  margin-right: 10px
+// .nf-field-container
+//   margin-bottom: 0px
+//
+// nf-fields-wrap
+//   display: flex
+//   flex-direction: row
+//   width: 45%
+//
+// nf-field:first-of-type
+//   width: 100%
+//   margin-right: 10px
