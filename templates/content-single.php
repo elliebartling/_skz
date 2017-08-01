@@ -10,6 +10,7 @@
         </div>
       <?php endif; ?>
     </header>
+    <?php if(get_field('first_social') || get_field('second_social') || get_field('third_social')): ?>
     <div class="social-suggestions">
       <h5>Share</h5>
       <?php if(get_field('first_social')): ?>
@@ -22,6 +23,7 @@
         <a target="_blank" href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_the_permalink()) ?>&text=<?php echo urlencode(get_field('third_social'))?>"><i class="fa fa-twitter"></i><?= get_field('third_social') ?></a>
       <?php endif; ?>
     </div>
+    <?php endif; ?>
     <div class="entry-content">
       <?php the_content(); ?>
     </div>
