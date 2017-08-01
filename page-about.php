@@ -5,7 +5,7 @@
     <?php get_template_part('templates/content', 'page'); ?>
 
     <div class="page-header" id="contributors">
-      <h1>Contributors</h1>
+      <h1>Editors</h1>
     </div>
     <div class="contributors-wrap">
       <?php

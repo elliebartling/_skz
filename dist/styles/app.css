@@ -6,7 +6,7 @@
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=4dbbe6f2-46bb-4b9d-a42d-7336f9b73241");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i");
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -8272,6 +8272,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 h1, h2, h3, h4 {
   color: #1E1E25;
+  font-weight: bold;
 }
 
 h1 a, h2 a, h3 a, h4 a {
@@ -9300,6 +9301,9 @@ time {
   overflow: hidden;
   margin-top: 40px;
   margin-bottom: 40px;
+  max-width: 120%;
+  margin-left: -5%;
+  margin-right: -5%;
 }
 
 .single .entry-image img {
@@ -9342,6 +9346,32 @@ time {
   font-style: italic;
   margin-top: 0.5rem;
   text-align: center;
+}
+
+.single .social-suggestions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.single .social-suggestions a {
+  width: 100%;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #555555;
+}
+
+.single .social-suggestions a:hover {
+  color: #1E1E25;
+}
+
+.single .social-suggestions a i {
+  margin-right: 5px;
+}
+
+.single .social-suggestions a:last-of-type {
+  border-bottom: 0px solid transparent;
 }
 
 .single blockquote {

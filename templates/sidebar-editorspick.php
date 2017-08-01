@@ -1,9 +1,15 @@
 <aside class="col-12 col-lg-3" id="sidebar-editors-picks">
-  <div class="sidebar-item advertisements">
+  <div style="width:300px" class="sidebar-item advertisements">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 600x300 ad -->
     <p class="advertisement-title">Advertisement</p>
-    <div class="advertisement">
-      <img src="http://via.placeholder.com/300x600">
-    </div>
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:600px"
+         data-ad-client="ca-pub-7264352120103797"
+         data-ad-slot="7421283897"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
   </div>
   <div class="sidebar-item books">
     <h2>Editor's Picks</h2>
