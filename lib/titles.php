@@ -12,6 +12,8 @@ function title() {
     } else {
       return __('Latest Posts', 'sage');
     }
+  } if (is_author()) {
+    return get_the_author_meta('first_name') . " " . get_the_author_meta('last_name');
   } elseif (is_archive()) {
     return get_the_archive_title();
   } elseif (is_search()) {
