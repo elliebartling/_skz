@@ -1,4 +1,4 @@
-let mix = require('laravel-mix');
+const mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,25 +11,57 @@ let mix = require('laravel-mix');
  |
  */
 
+// const assetsPath = 'assets';
+// const distPath   = './dist';
+// const publicPath = '/app/themes/_skz';
+//
+// mix.setPublicPath(distPath);
+// mix.setResourceRoot('/');
+
 mix.autoload({
   $: "jquery",
   jQuery: "jquery"
 })
 
-mix.js('assets/scripts/app.js', 'dist/scripts')
-   .copyDirectory('assets/images', 'dist/images')
-   .copyDirectory('assets/fonts', 'dist/fonts')
-   .fastSass('assets/styles/app.sass', 'dist/styles')
-   .fastSass('assets/styles/admin.scss', 'dist/styles')
+mix
+   .js(`assets/scripts/app.js`, `./dist/scripts`)
+   .copyDirectory(`assets/images`, `./dist/images`)
+   .copyDirectory(`assets/fonts`, `./dist/fonts`)
+   .fastSass(`assets/styles/app.sass`, `./dist/styles`)
+   .fastSass(`assets/styles/admin.scss`, `./dist/styles`)
    .browserSync({
-       proxy: 'skeptic.dev',
-       files: [
-         'dist/scripts/*.js',
-         'dist/styles/app.css'
-       ]
-     })
+       proxy: 'skeptic.dev'
+      //  files: [
+      //   `${publicPath}/**/*.php`,
+      //   `assets/**/*.js`,
+      //   `assets/**/*.css`
+      // ]
+    })
+  //  .version([
+  //    './dist/scripts/app.js',
+  //    './dist/styles/app.css'
+  //  ]);
 
 
+// mix.options({
+//  postCss: [
+//    require('lost')(),
+//    require('rucksack-css')()
+//  ]
+// });
+
+// // Hash and version files in production.
+// if (process.env.NODE_ENV.trim() === 'production') {
+//   mix.version([
+//     `dist/scripts/app.js`,
+//     `dist/styles/app.css`,
+//   ])
+// }
+
+// // Source maps when not in production.
+// if (!process.env.NODE_ENV === 'production') {
+//  mix.sourceMaps();
+// }
 
 // Full API
 // mix.js(src, output);
